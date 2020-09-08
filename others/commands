@@ -2,3 +2,12 @@ go clean --modcache
 go mod init github.com/byteshiva/simplegrpc
 protoc -I addition addition/addition.proto --go_out=plugins=grpc:addition
 protoc -I subtraction subtraction/subtraction.proto --go_out=plugins=grpc:subtraction
+
+
+# how to add new subtree 
+git remote add nodejs-client https://github.com/byteshiva/node-grpc-client
+
+git subtree add --squash --prefix=nodejs-client/ nodejs-client master
+
+#How to pull from remote commit -
+git subtree pull --squash --prefix=nodejs-client/ nodejs-client master
