@@ -1,0 +1,4 @@
+go clean --modcache
+go mod init github.com/byteshiva/simplegrpc
+protoc -I addition addition/addition.proto --go_out=plugins=grpc:addition
+protoc -I subtraction subtraction/subtraction.proto --go_out=plugins=grpc:subtraction
