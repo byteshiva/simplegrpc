@@ -11,10 +11,10 @@ import (
 	"google.golang.org/grpc"
 )
 
-type additionServer struct {
+type mathServer struct {
 }
 
-func (s *additionServer) Add(c context.Context, addRequest *addition.AddRequest) (*addition.AddResponse, error) {
+func (s *mathServer) Add(c context.Context, addRequest *addition.AddRequest) (*addition.AddResponse, error) {
 	result := addRequest.Number + addRequest.AnotherNumber
 	response := addition.AddResponse{
 		Sum: int64(result),
@@ -22,7 +22,7 @@ func (s *additionServer) Add(c context.Context, addRequest *addition.AddRequest)
 	return &response, nil
 }
 
-func (s *additionServer) Minus(c context.Context, minusRequest *subtraction.MinusRequest) (*subtraction.MinusResponse, error) {
+func (s *mathServer) Minus(c context.Context, minusRequest *subtraction.MinusRequest) (*subtraction.MinusResponse, error) {
 	result := minusRequest.Number - minusRequest.AnotherNumber
 	response := subtraction.MinusResponse{
 		Subtract: int64(result),
@@ -30,8 +30,8 @@ func (s *additionServer) Minus(c context.Context, minusRequest *subtraction.Minu
 	return &response, nil
 }
 
-func newAddServer() *additionServer {
-	return &additionServer{}
+func newAddServer() *mathServer {
+	return &mathServer{}
 }
 
 func main() {
