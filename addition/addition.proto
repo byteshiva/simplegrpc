@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package addition;
-option go_package = "github.com/byteshiva/simplegrpc;simplegrpc";
+option go_package = "github.com/byteshiva/simplegrpc/addition;addition";
 
 message AddRequest {
     int32 number = 1;
