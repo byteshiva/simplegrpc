@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package subtraction;
+// option go_package = "github.com/byteshiva/simplegrpc/addition;addition";
+
+message MinusRequest {
+    int32 number = 1;
+    int32 anotherNumber = 2;
+}
+
+message MinusResponse {
+    int64 subtract = 1;
+}
+
+service Subtraction {
+    rpc Minus (MinusRequest) returns (MinusResponse) {}
+}
