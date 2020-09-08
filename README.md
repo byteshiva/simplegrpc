@@ -1,3 +1,3 @@
 # simplegrpc
 Grpc golang and nodejs demo
-![demo golang-nodejs-client-grpc](demo/GoLang-gRPC-Nodejs-gRPC-ClientPeek 2020-09-08 22-58.gif)
+![demo golang-nodejs-client-grpc](https://raw.githubusercontent.com/byteshiva/simplegrpc/master/demo/GoLang-gRPC-Nodejs-gRPC-ClientPeek%202020-09-08%2022-58.gif)
