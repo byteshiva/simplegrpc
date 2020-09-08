@@ -11,3 +11,7 @@ git subtree add --squash --prefix=nodejs-client/ nodejs-client master
 
 #How to pull from remote commit -
 git subtree pull --squash --prefix=nodejs-client/ nodejs-client master
+
+
+#How to push from remote commit -
+git subtree push --squash --prefix=nodejs-client/ nodejs-client master
