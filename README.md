@@ -6,7 +6,9 @@ Grpc golang and nodejs demo
 cd simplegrpc 
 go run simpleserver.go
 
+```
 
+```
 // Client side - nodejs
 cd nodejs-client/
 // do npm install
